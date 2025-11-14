@@ -1,0 +1,108 @@
+.side-bar-container {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgba(150, 150, 150, 0.226);
+    width: 90px;
+    padding: 10px;
+    align-items: center;
+    box-shadow: 2px 0px 5px #3f2f2fc7;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.side-bar-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+}
+
+.side-bar-back-stage-logo-container {
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.side-bar-back-stage-logo-container:hover {
+    background-color: rgba(255, 255, 255, 0.068);
+}
+.side-bar-back-stage-logo {
+    width: 100%;
+    height: 100%;
+}
+polygon {
+    fill: #d9ffe0;
+}
+.side-bar-home-logo-container {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.side-bar-home-logo-container:hover {
+    background-color: rgba(255, 255, 255, 0.068);
+}
+.side-bar-home-logo {
+    width: 100%;
+    height: 100%;
+    fill: white;
+}
+
+.side-bar-search-logo-container {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.side-bar-search-logo-container:hover {
+    background-color: rgba(255, 255, 255, 0.068);
+}
+.side-bar-search-logo {
+    width: 100%;
+    height: 100%;
+    
+}
+circle, line {
+    stroke: white;
+}
+.side-bar-message-logo-container {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.side-bar-message-logo-container:hover {
+    background-color: rgba(255, 255, 255, 0.068);
+}
+.side-bar-message-logo {
+    width: 100%;
+    height: 100%;
+    stroke: white;
+}
+.side-bar-hambergur-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+.side-bar-hambergur-container:hover {
+    background-color: rgba(255, 255, 255, 0.068);
+}
+.side-bar-hambergur {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 28px;
+    color: white;
+    font-weight: 1000;
+}
