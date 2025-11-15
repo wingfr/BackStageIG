@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router';
 import { TopPage } from './Pages/TopPage'
+import { AccountPage } from './Pages/AccountPage';
 import './App.css'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<TopPage />} />
+        <Route path='/account' element={<AccountPage />} />
       </Routes>
     </>
   )

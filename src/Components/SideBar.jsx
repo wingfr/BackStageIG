@@ -13,18 +13,18 @@ export function SideBar({ onPlusClick }) {
     return (
         <div className="side-bar-container">
             <div className="side-bar-back-stage-logo-section">
-                <div className="side-bar-back-stage-logo-container">
-                    <Link to="/">
+                <Link to="/">
+                    <div className="side-bar-back-stage-logo-container">
                         <Logo className="side-bar-back-stage-logo" />
-                    </Link>
-                </div>
+                    </div>
+                </Link>
             </div>
             <div className="side-bar-menu">
-                <div className="side-bar-home-logo-container">
-                    <Link to="/">
+                <Link to="/">
+                    <div className="side-bar-home-logo-container">
                         <HomeIcon className="side-bar-home-logo" />
-                    </Link>
-                </div>
+                    </div>
+                </Link>
                 <div className="side-bar-search-logo-container">
                     <SearchIcon className="side-bar-search-logo" />
                 </div>
@@ -37,11 +37,13 @@ export function SideBar({ onPlusClick }) {
                 >
                     <PlusIcon className="side-bar-plus-logo" />
                 </div>
-                <div className="side-bar-my-account-container">
-                    <div className="side-bar-my-account">
-                        <div className="person"></div>
+                <Link to={"/account"}>
+                    <div className="side-bar-my-account-container">
+                        <div className="side-bar-my-account">
+                            <div className="person"></div>
+                        </div>
                     </div>
-                </div>
+                </Link>
             </div>
             <div className="side-bar-hambergur-container">
                 <div className="side-bar-hambergur">

@@ -3,11 +3,11 @@ import CommentIcon from "/src/assets/icon_comment.svg?react";
 
 import "./Posts.css";
 
-export function Posts({ posts }) {
+export function Posts({ posts, onToggleLike }) {
     return (
         <>
-            {posts.map((post) => (
-                <div key={post.id} className="post-container">
+            {posts.map((post, index) => (
+                <div key={post.id || index} className="post-container">
                     <div className="post-account-container">
                         <div className="post-account-img">
                         </div>
@@ -20,8 +20,16 @@ export function Posts({ posts }) {
                     </div>
                     <div className="post-info-container">
                         <div className="post-info-logo-container">
-                            <div className="post-info-heart-container">
-                                <HeartIcon className="post-heart-logo" />
+                            <div
+                                className="post-info-heart-container"
+                                onClick={() => onToggleLike(index)}
+                            >
+                                <HeartIcon
+                                    className={
+                                        "post-heart-logo" +
+                                        (post.liked ? " liked" : "")
+                                    }
+                                />
                             </div>
                             <div className="post-info-comments-container">
                                 <CommentIcon className="post-comment-logo" />

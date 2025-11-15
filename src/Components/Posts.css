@@ -60,10 +60,18 @@
     width: 30px;
     height: 30px;
     font-size: 25px;
+    transition: 0.2s ease;
+}
+.post-info-heart-container:hover {
+    scale: 1.08;
 }
 .post-heart-logo {
     width: 100%;
     height: 100%;
+}
+.post-heart-logo.liked {
+    background-color: red;
+    border-radius: 10px;
 }
 .post-info-comments-container {
     display: flex;
@@ -126,7 +134,7 @@
 }
 
 
-/* --- スマホ専用（幅480px以下） --- */
+
 @media (max-width: 480px) {
     .post-account-img {
         width: 30px;
@@ -156,6 +164,6 @@
         padding: 10px;
     }
     .post-info-heart-count {
-        font-size: 15px;
+        font-size: 14px;
     }
 }

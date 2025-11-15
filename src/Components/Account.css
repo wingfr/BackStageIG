@@ -1,0 +1,95 @@
+.account-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    height: 100vh;
+    margin-left: 180px;
+    background-color: rgba(0, 255, 255, 0);
+    color: white;
+}
+.account-page-header {
+    display: flex;
+    margin-top: 40px;
+}
+.account-page-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 228, 196, 0);
+    margin-right: 40px;
+}
+.account-page-logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    background-color: gray;
+}
+
+.account-page-header-second-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.account-page-name {
+    font-size: 23px;
+    font-weight: 600;
+}
+.account-page-follow-container {
+    display: flex;
+    gap: 20px;
+    font-weight: 600;
+}
+
+.account-page-middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    background-color: rgba(0, 255, 255, 0);
+}
+.account-page-middle-profile-setting-container {
+    background-color: rgba(0, 0, 255, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+}
+.account-page-middle-profile-setting {
+    text-align: center;
+    width: 100%;
+    max-width: 180px;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.041);
+    font-weight: 600;
+}
+.account-page-middle-setting-container {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+}
+.account-page-middle-setting {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    max-width: 180px;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.041);
+    font-weight: 600;
+}
+
+
+@media (max-width: 800px) {
+    .account-container {
+        margin-left: 0px;
+    }
+}

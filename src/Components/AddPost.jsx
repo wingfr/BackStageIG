@@ -20,8 +20,8 @@ export function AddPost({ onClose, onCreate }) {
             id: Date.now(),
             user: "you",
             image: imagePreview,
-            caption: caption,  // ← 説明文を追加
-            likes: 0,
+            caption: caption,
+            liked: false,
         };
 
         onCreate(newPost);

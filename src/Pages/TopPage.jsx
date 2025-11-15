@@ -8,6 +8,19 @@ export function TopPage() {
     const [isCreatePostOpen, setIsCreatePostOpen] = useState(false);
     const [posts, setPosts] = useState([]);
 
+    function toggleLike(index) {
+        setPosts(prev =>
+            prev.map((p, i) =>
+                i === index
+                    ? {
+                        ...p,
+                        liked: !p.liked,
+                        likes: p.liked ? p.likes - 1 : p.likes + 1
+                    }
+                    : p
+            )
+        );
+    }
     function ShowCreatePost() {
         setIsCreatePostOpen(true);
     }
@@ -26,7 +39,7 @@ export function TopPage() {
                     onPlusClick={ShowCreatePost}
                 />
                 <div className="top-page-post">
-                    <Posts posts={posts} />
+                    <Posts posts={posts} onToggleLike={toggleLike} />
                 </div>
             </div>
             {isCreatePostOpen && (
