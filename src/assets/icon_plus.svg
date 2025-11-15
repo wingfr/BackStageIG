@@ -1,0 +1,7 @@
+<svg width="512" height="512" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 縦の線（細め） -->
+  <rect x="30" y="8" width="4" height="48" rx="1.5" fill="#FFFFFF"></rect>
+  
+  <!-- 横の線（細め） -->
+  <rect x="8" y="30" width="48" height="4" rx="1.5" fill="#FFFFFF"></rect>
+</svg>

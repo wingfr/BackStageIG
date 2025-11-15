@@ -1,0 +1,12 @@
+.top-page-container {
+    display: flex;
+    
+}
+.top-page-side-bar {
+    position: fixed;
+}
+.top-page-post {
+    margin-right: auto;
+    margin-left: auto;
+    
+}

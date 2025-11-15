@@ -1,14 +1,21 @@
 .side-bar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 100vh;
+
     display: flex;
     flex-direction: column;
     border-right: 1px solid rgba(150, 150, 150, 0.226);
-    width: 90px;
     padding: 10px;
     align-items: center;
     box-shadow: 2px 0px 5px #3f2f2fc7;
-    height: 100vh;
     box-sizing: border-box;
+
+    background-color: rgb(46, 30, 30); /* 重要：背景色を必ずつける */
 }
+
 
 .side-bar-menu {
     display: flex;
@@ -40,6 +47,9 @@ polygon {
     fill: #d9ffe0;
 }
 .side-bar-home-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
     padding: 5px;
@@ -50,12 +60,16 @@ polygon {
     background-color: rgba(255, 255, 255, 0.068);
 }
 .side-bar-home-logo {
-    width: 100%;
-    height: 100%;
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
     fill: white;
 }
 
 .side-bar-search-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
     padding: 5px;
@@ -66,14 +80,17 @@ polygon {
     background-color: rgba(255, 255, 255, 0.068);
 }
 .side-bar-search-logo {
-    width: 100%;
-    height: 100%;
+    width: 30px;
+    height: 30px;
     
 }
 circle, line {
     stroke: white;
 }
 .side-bar-message-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
     padding: 5px;
@@ -84,15 +101,78 @@ circle, line {
     background-color: rgba(255, 255, 255, 0.068);
 }
 .side-bar-message-logo {
-    width: 100%;
-    height: 100%;
+    width: 30px;
+    height: 30px;
     stroke: white;
 }
-.side-bar-hambergur-container {
+
+.side-bar-plus-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
-    border-radius: 10px;
     padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.side-bar-plus-logo-container:hover {
+    background-color: rgba(255, 255, 255, 0.068);
+}
+.side-bar-plus-logo {
+    width: 30px;
+    height: 30px;
+    stroke: white;
+}
+
+.side-bar-my-account-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.side-bar-my-account-container:hover {
+    background-color: rgba(255, 255, 255, 0.068);
+
+}
+.side-bar-my-account {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgb(211, 211, 211);
+}
+.person {
+    background-color: #858585c7;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 4px;
+    margin-left: 13px;
+}
+.person::after {
+    content: "";
+    position: absolute;
+    background-color: gray;
+    height: 13px;
+    width: 27px;
+    top: 16px;
+    left: -7px;
+    border-radius: 50% 50% 0% 0%;
+}
+
+.side-bar-hambergur-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
     cursor: pointer;
 }
 .side-bar-hambergur-container:hover {
@@ -100,9 +180,46 @@ circle, line {
 }
 .side-bar-hambergur {
     display: flex;
+    align-items: center;
     justify-content: center;
-    width: 100%;
-    font-size: 28px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
     color: white;
-    font-weight: 1000;
+    font-weight: 800;
+}
+
+/*スマホ対応*/
+@media (max-width: 800px) {
+  .side-bar-container {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+
+    flex-direction: row;    /* 横並び */
+    justify-content: space-around;
+    padding: 0 10px;
+    border-top: 1px solid rgba(150, 150, 150, 0.226);
+    box-shadow: 1px 0px 5px #3f2f2fc7;
+  }.side-bar-menu {
+    padding: 0px;
+    margin: 0px;
+    flex-direction: row;
+    position: relative;
+    bottom: 0px;
+    gap: 5px;
+    justify-content: center;
+  }.side-bar-back-stage-logo-container {
+    margin: 0px;
+  }
+}
+@media (max-width: 330px) {
+    .side-bar-container {
+        justify-content: space-between;
+    }
+    .side-bar-menu {
+        display: none;
+    }
 }
